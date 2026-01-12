@@ -58,7 +58,7 @@ def get_weather(city: str) -> dict:
 # llm = LiteLlm(os.getenv("GOOGLE_API_KEY"))
 
 multi_model_config = LiteLlm(
-    model="gemini/gemini-2.5-flash",
+    model="gemini/gemini-2.5-flash-preview",
     fallbacks=["openai/gpt-4o-mini", "anthropic/claude-3-haiku"],
     num_retries=2,
 )
